@@ -5,18 +5,20 @@ public class FindMaximum {
 
         System.out.println("Welcome to the Program");
         FindMaximum findMaximum = new FindMaximum();
-        System.out.println("Maximum number is : " + findMaximum.findMaxFlotValue(2.3, 26.3, 8.6));
+        System.out.println("Maximum number is : " + findMaximum.findMaxFlotValue("Apple", "Peach", "Banana"));
     }
 
-    public double findMaxFlotValue ( Double firstValue, Double secondValue, Double thirdValue)
+    public String findMaxFlotValue ( String String1, String String2, String String3)
         {
-            if (firstValue.compareTo(secondValue) > 0 && firstValue.compareTo(thirdValue) > 0) {
-                return firstValue;
+            if (String1.compareTo(String2) > 0 && String1.compareTo(String3) > 0) {
+                return String1;
             }
-         else if (secondValue.compareTo(thirdValue) > 0 && secondValue.compareTo(firstValue) > 0) {
-            return secondValue;
+         else if (String2.compareTo(String3) > 0 && String2.compareTo(String1) > 0) {
+
+            return String2;
         } else {
-            return thirdValue;
+
+            return String3;
         }
     }
 }
