@@ -5,9 +5,10 @@ public class FindMaximum {
 
         System.out.println("Welcome to the Program");
         FindMaximum findMaximum = new FindMaximum();
-        System.out.println("Maximum number is : " + findMaximum.findMaxIntValue(22, 3, 6));
+        System.out.println("Maximum number is : " + findMaximum.findMaxFlotValue(2.3, 26.3, 8.6));
     }
-        public int findMaxIntValue ( Integer firstValue, Integer secondValue, Integer thirdValue)
+
+    public double findMaxFlotValue ( Double firstValue, Double secondValue, Double thirdValue)
         {
             if (firstValue.compareTo(secondValue) > 0 && firstValue.compareTo(thirdValue) > 0) {
                 return firstValue;
@@ -19,10 +20,3 @@ public class FindMaximum {
         }
     }
 }
-
-//        if (firstValue >= secondValue && firstValue >= thirdValue)
-//            System.out.println(firstValue + " Maximum number is");
-//        else if (secondValue >= firstValue && secondValue >= thirdValue)
-//            System.out.println(secondValue + " Maximum number is");
-//        else
-//            System.out.println(thirdValue + " Maximum number is");
