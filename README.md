@@ -5,3 +5,4 @@
 4) Find the maximum from given Integer values.
 5) Find the maximum from given Flot values.
 6) Find the maximum from given String.
+7) Refactor the code by using Generic method
